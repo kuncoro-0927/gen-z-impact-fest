@@ -9,7 +9,7 @@
   <body class="">
     <!-- NAVBAR -->
     <nav
-      class="flex md:grid md:grid-cols-3 items-center justify-between px-5 py-4 bg-white relative z-40"
+      class="flex md:grid md:grid-cols-3 xl: items-center justify-between px-5 py-4 bg-white relative z-40"
     >
       <div class="flex items-center gap-1 text-slate-900 font-bold text-xl">
         <img
@@ -44,7 +44,7 @@
 
     <div
       id="mobileMenu"
-      class="md:hidden fixed rounded-2xl top-4 left-4 w-4/5 h-[500px] z-50 bg-ungu -translate-x-[calc(100%+16px)] transition-transform duration-300 ease-in-out"
+      class="md:hidden fixed rounded-2xl top-4 left-4 sm:top-8 sm:left-8 w-4/5 h-[500px] z-50 bg-ungu [--menu-offset:16px] sm:[--menu-offset:32px] -translate-x-[calc(100%+var(--menu-offset))] transition-transform duration-300 ease-in-out"
     >
       <div class="flex flex-col h-full px-6 py-6">
         <div class="flex items-center justify-between mb-10">
@@ -96,34 +96,40 @@
     </header>
 
     <!-- SECTION TUJUAN -->
-    <section id="tujuan" class="mt-10 p-6">
+    <section id="tujuan" class="mt-10 p-6 sm:px-20 md:px-8">
       <div class="flex flex-col items-center justify-center te">
         <h2 class="text-ungu font-bold text-xl">Tujuan</h2>
         <span class="text-sm">Lorem ipsum dolor sit amet.</span>
       </div>
 
-      <div class="flex flex-col gap-y-0 mt-5">
+      <div
+        class="flex flex-col md:grid md:grid-cols-2 md:gap-x-3 md:items-stretch gap-y-4 mt-5"
+      >
         <!-- TUJUAN 1 -->
         <div class="flex items-stretch">
-          <div class="border-r flex items-center justify-center px-7">
+          <div class="border-b flex items-center justify-center px-7">
             <span>1</span>
           </div>
-          <div class="px-7 py-2 flex flex-col gap-1 bg-ungu/30">
+
+          <div class="border-r my-3"></div>
+
+          <div class="border-b px-7 py-2 flex flex-col gap-1 bg-ungu/30">
             <h3 class="text-sm font-bold">Literasi Keuangan Mahasiswa</h3>
             <p class="text-sm">
               Meningkatkan literasi keuangan generasi muda, khususnya mahasiswa.
             </p>
           </div>
         </div>
-
-        <div class="border-b my-3"></div>
 
         <!-- TUJUAN 2 -->
         <div class="flex items-stretch">
-          <div class="border-r flex items-center justify-center px-7">
+          <div class="border-b flex items-center justify-center px-7">
             <span>1</span>
           </div>
-          <div class="px-7 py-2 flex flex-col gap-1">
+
+          <div class="border-r my-3"></div>
+
+          <div class="border-b px-7 py-2 flex flex-col gap-1 bg-ungu/30">
             <h3 class="text-sm font-bold">Literasi Keuangan Mahasiswa</h3>
             <p class="text-sm">
               Meningkatkan literasi keuangan generasi muda, khususnya mahasiswa.
@@ -131,13 +137,15 @@
           </div>
         </div>
 
-        <div class="border-b my-3"></div>
         <!-- TUJUAN 3 -->
         <div class="flex items-stretch">
-          <div class="border-r flex items-center justify-center px-7">
+          <div class="border-b flex items-center justify-center px-7">
             <span>1</span>
           </div>
-          <div class="px-7 py-2 flex flex-col gap-1">
+
+          <div class="border-r my-3"></div>
+
+          <div class="border-b px-7 py-2 flex flex-col gap-1 bg-ungu/30">
             <h3 class="text-sm font-bold">Literasi Keuangan Mahasiswa</h3>
             <p class="text-sm">
               Meningkatkan literasi keuangan generasi muda, khususnya mahasiswa.
@@ -145,13 +153,15 @@
           </div>
         </div>
 
-        <div class="border-b my-3"></div>
         <!-- TUJUAN 4 -->
         <div class="flex items-stretch">
-          <div class="border-r flex items-center justify-center px-7">
+          <div class="border-b flex items-center justify-center px-7">
             <span>1</span>
           </div>
-          <div class="px-7 py-2 flex flex-col gap-1">
+
+          <div class="border-r my-3"></div>
+
+          <div class="border-b px-7 py-2 flex flex-col gap-1 bg-ungu/30">
             <h3 class="text-sm font-bold">Literasi Keuangan Mahasiswa</h3>
             <p class="text-sm">
               Meningkatkan literasi keuangan generasi muda, khususnya mahasiswa.
@@ -159,13 +169,15 @@
           </div>
         </div>
 
-        <div class="border-b my-3"></div>
         <!-- TUJUAN 5 -->
         <div class="flex items-stretch">
-          <div class="border-r flex items-center justify-center px-7">
+          <div class="border-b flex items-center justify-center px-7">
             <span>1</span>
           </div>
-          <div class="px-7 py-2 flex flex-col gap-1">
+
+          <div class="border-r my-3"></div>
+
+          <div class="border-b px-7 py-2 flex flex-col gap-1">
             <h3 class="text-sm font-bold">Literasi Keuangan Mahasiswa</h3>
             <p class="text-sm">
               Meningkatkan literasi keuangan generasi muda, khususnya mahasiswa.
@@ -176,13 +188,15 @@
     </section>
 
     <!-- SECTION TARGET -->
-    <section class="mt-10 p-6">
+    <section class="mt-10 p-6 sm:px-20 md:px-8">
       <div class="flex flex-col items-center justify-center te">
         <h2 class="text-ungu font-bold text-xl">Target</h2>
         <span class="text-sm">Lorem ipsum dolor sit amet.</span>
       </div>
 
-      <div class="flex flex-col items-center">
+      <div
+        class="flex flex-col md:grid md:grid-cols-3 md:gap-x-3 md:items-stretch items-center"
+      >
         <!-- TARGET 1 -->
         <div
           class="shadow-md rounded-xl p-4 mt-5 bg-linear-to-tl from-ungu from-0% to-white to-20%"
@@ -238,60 +252,66 @@
     </section>
 
     <!-- SECTION AGENDA & LOKASI -->
-    <section class="mt-10 p-6">
+    <section
+      class="mt-10 p-6 sm:px-20 md:px-8 flex flex-col md:flex-row md:gap-4 items-start"
+    >
       <div class="bg-gray-300 rounded-xl">
         <img
-          class="-rotate-3 rounded-xl"
+          class="rounded-xl"
           src="/gen-z-impact-fest/assets/images/bulaksumur.webp"
-          alt=""
+          alt="w-full"
         />
       </div>
 
-      <div class="text-ungu mt-7 flex flex-col gap-2">
-        <h2 class="font-bold text-xl">Agenda & Lokasi</h2>
-        <h3 class="text-2xl font-semibold">
-          Gadjah Mada University Club (UC) Hotel UGM
-        </h3>
-        <p class="text-sm">
-          Jl. Pancasila No.2, Sendowo, Sinduadi, Kec. Depok, Kabupaten Sleman,
-          Daerah Istimewa Yogyakarta 55281
-        </p>
-      </div>
-
-      <div class="flex items-stretch mt-5">
-        <div class="bg-ungu p-6 rounded-l-2xl">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="white"
-            class="size-6"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"
-            />
-          </svg>
+      <div class="flex flex-col mt-7 md:mt-0">
+        <div class="text-ungu flex flex-col gap-2">
+          <h2 class="font-bold text-xl">Agenda & Lokasi</h2>
+          <h3 class="text-2xl font-semibold">
+            Gadjah Mada University Club (UC) Hotel UGM
+          </h3>
+          <p class="text-sm">
+            Jl. Pancasila No.2, Sendowo, Sinduadi, Kec. Depok, Kabupaten Sleman,
+            Daerah Istimewa Yogyakarta 55281
+          </p>
         </div>
-        <div
-          class="text-ungu w-full border border-ungu rounded-r-2xl p-2 flex flex-col items-start gap-1"
-        >
-          <span class="font-bold text-base">12 September 2026</span>
-          <span class="text-sm">Sabtu, 09.00 WIB - 14.00 WIB</span>
+
+        <div class="flex items-stretch mt-5">
+          <div class="bg-ungu p-6 rounded-l-2xl">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="white"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"
+              />
+            </svg>
+          </div>
+          <div
+            class="text-ungu w-full border border-ungu rounded-r-2xl p-2 flex flex-col items-start gap-1"
+          >
+            <span class="font-bold text-base">12 September 2026</span>
+            <span class="text-sm">Sabtu, 09.00 WIB - 14.00 WIB</span>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- SECTION LOMBA & KOMPETISI -->
-    <section class="mt-10 p-6">
+    <section class="mt-10 p-6 sm:px-20 md:px-8">
       <div class="flex flex-col items-center justify-center te">
         <h2 class="text-ungu font-bold text-xl">Lomba & Kompetisi</h2>
         <span class="text-sm">Lorem ipsum dolor sit amet.</span>
       </div>
 
-      <div class="flex flex-col gap-7 items-center mt-7">
+      <div
+        class="flex flex-col gap-7 items-center mt-7 md:grid md:grid-cols-3 md:gap-x-3 md:items-stretch"
+      >
         <!-- LOMBA 1 -->
         <div class="relative rounded-3xl shadow-md bg-ungu px-5 py-10">
           <img
@@ -368,14 +388,14 @@
       </div>
     </section>
 
-    <footer class="relative text-white bg-ungu mt-30 p-6">
+    <footer class="relative z-0 text-white bg-ungu mt-30 sm:mt-40 p-6">
       <img
-        class="absolute top-0 left-0 w-full -translate-y-full"
-        src="/gen-z-impact-fest/assets/images/footer-ungu.svg"
+        class="absolute -z-50 top-[1px] left-0 w-full -translate-y-full"
+        src="/gen-z-impact-fest/assets/images/footerpng.png"
         alt=""
       />
 
-      <div>
+      <div class="sm:mb-5">
         <img
           class="w-20"
           src="/gen-z-impact-fest/assets/images/logo-svg.svg"
@@ -409,7 +429,7 @@
         </span>
       </div>
 
-      <div class="mt-5 flex justify-start gap-10 items-start">
+      <div class="mt-5 flex justify-start gap-10 sm:gap-x-20 items-start">
         <ul class="flex flex-col gap-y-3 items-start">
           <li class="font-semibold">Menu</li>
           <li>Tujuan</li>

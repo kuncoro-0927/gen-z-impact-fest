@@ -4,14 +4,14 @@ const menu = document.getElementById("mobileMenu");
 const backdrop = document.getElementById("menuBackdrop");
 
 function openMenu() {
-  menu.classList.remove("-translate-x-[calc(100%+16px)]");
+  menu.classList.remove("-translate-x-[calc(100%+var(--menu-offset))]");
   backdrop.classList.remove("opacity-0", "pointer-events-none");
   backdrop.classList.add("opacity-100");
   document.body.classList.add("overflow-hidden");
 }
 
 function closeMenu() {
-  menu.classList.add("-translate-x-[calc(100%+16px)]");
+  menu.classList.add("-translate-x-[calc(100%+var(--menu-offset))]");
   backdrop.classList.add("opacity-0", "pointer-events-none");
   backdrop.classList.remove("opacity-100");
   document.body.classList.remove("overflow-hidden");
