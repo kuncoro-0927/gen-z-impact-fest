@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+  --color-biru: #404182;
+  --color-hijau-tua: #28b6a7;
+  --color-hijau: #6ec490;
+  --color-ungu: #8d63ac;
+  --color-kuning: #f3d92c;
+  --color-pink: #fc87a3;
+}
