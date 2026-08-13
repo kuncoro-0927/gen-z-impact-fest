@@ -5,391 +5,441 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./css/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body class="">
-    <!-- NAVBAR -->
-    <nav
-      class="flex md:grid md:grid-cols-3 xl: items-center justify-between px-5 py-4 bg-white relative z-40"
-    >
-      <div class="flex items-center gap-1 text-slate-900 font-bold text-xl">
-        <img
-          class="w-18"
-          src="/gen-z-impact-fest/assets/images/logo-svg.svg"
-          alt=""
-        />
-      </div>
-
-      <div
-        class="hidden md:flex items-center justify-center gap-8 text-sm font-medium text-slate-700"
+    <header>
+      <!-- NAVBAR -->
+      <nav
+        class="sticky top-0 flex items-center justify-between py-4 px-6 sm:px-20 md:px-8 lg:px-10 xl:px-16 2xl:px-28 bg-white z-40"
       >
-        <a href="#" class="hover:text-slate-900">Lorem Ipsum</a>
-        <a href="#" class="hover:text-slate-900">Lorem Ipsum</a>
-        <a href="#" class="hover:text-slate-900">Lorem Ipsum</a>
-      </div>
+        <div class="flex items-center w-fit">
+          <img
+            class="w-18 lg:w-24"
+            src="/gen-z-impact-fest/assets/images/logo-svg.svg"
+            alt=""
+          />
+        </div>
 
-      <div class="flex items-center justify-end gap-3">
-        <button id="menuOpenBtn" class="flex md:hidden flex-col gap-1.5 p-2">
-          <span class="w-6 h-0.5 bg-slate-900"></span>
-          <span class="w-6 h-0.5 bg-slate-900"></span>
-          <span class="w-6 h-0.5 bg-slate-900"></span>
-        </button>
-      </div>
-    </nav>
+        <div
+          class="hidden md:flex items-center justify-center gap-8 text-sm md:text-base 2xl:text-lg font-medium text-ungu whitespace-nowrap md:absolute md:left-1/2 md:-translate-x-1/2"
+        >
+          <a href="#tujuan" class="hover:text-slate-900">Tujuan</a>
+          <a href="#target" class="hover:text-slate-900">Target</a>
+          <a href="#agenda" class="hover:text-slate-900">Agenda & Lokasi</a>
+          <a href="#lomba" class="hover:text-slate-900">Lomba & Kompetisi</a>
+        </div>
 
-    <!-- MOBILE MENU -->
-    <div
-      id="menuBackdrop"
-      class="md:hidden fixed inset-0 z-40 bg-white/30 backdrop-blur-xs opacity-0 pointer-events-none transition-opacity duration-300"
-    ></div>
-
-    <div
-      id="mobileMenu"
-      class="md:hidden fixed rounded-2xl top-4 left-4 sm:top-8 sm:left-8 w-4/5 h-[500px] z-50 bg-ungu [--menu-offset:16px] sm:[--menu-offset:32px] -translate-x-[calc(100%+var(--menu-offset))] transition-transform duration-300 ease-in-out"
-    >
-      <div class="flex flex-col h-full px-6 py-6">
-        <div class="flex items-center justify-between mb-10">
-          <div class="flex items-center gap-1 text-teal-400 font-bold text-xl">
-            <img
-              class="w-18"
-              src="/gen-z-impact-fest/assets/images/logo-svg.svg"
-              alt=""
-            />
-          </div>
-          <button
-            id="menuCloseBtn"
-            class="flex items-center gap-2 bg-white/40 backdrop-blur-sm text-white text-sm px-4 py-2 rounded-full"
-          >
-            <span class="leading-none">Tutup</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="size-4"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M6 18 18 6M6 6l12 12"
-              />
-            </svg>
+        <div class="">
+          <div class="md:hidden">lorem</div>
+          <button id="menuOpenBtn" class="flex md:hidden flex-col gap-1.5 p-2">
+            <span class="w-6 h-0.5 bg-slate-900"></span>
+            <span class="w-6 h-0.5 bg-slate-900"></span>
+            <span class="w-6 h-0.5 bg-slate-900"></span>
           </button>
         </div>
+      </nav>
 
-        <nav class="flex flex-col gap-6 text-2xl font-medium">
-          <a href="#tujuan" class="mobile-nav-link text-white">Tujuan</a>
-          <a href="#target" class="text-white">Target</a>
-          <a href="#agenda" class="text-white">Agenda & Lokasi</a>
-          <a href="#lomba" class="text-white">Lomba & Kompetisi</a>
-        </nav>
+      <!-- MOBILE MENU -->
+      <div
+        id="menuBackdrop"
+        class="md:hidden fixed inset-0 z-40 bg-white/30 backdrop-blur-xs opacity-0 pointer-events-none transition-opacity duration-300"
+      ></div>
 
-        <div class="mt-auto pt-6 border-t border-white">
-          <p class="text-xs text-white">2026 <sup>©</sup> Gen Z Impact Fest</p>
+      <div
+        id="mobileMenu"
+        class="md:hidden fixed rounded-2xl top-4 left-4 sm:top-8 sm:left-8 w-4/5 h-[500px] z-50 bg-ungu [--menu-offset:16px] sm:[--menu-offset:32px] -translate-x-[calc(100%+var(--menu-offset))] transition-transform duration-300 ease-in-out"
+      >
+        <div class="flex flex-col h-full px-6 py-6">
+          <div class="flex items-center justify-between mb-10">
+            <div
+              class="flex items-center gap-1 text-teal-400 font-bold text-xl"
+            >
+              <img
+                class="w-18"
+                src="/gen-z-impact-fest/assets/images/logo-svg.svg"
+                alt=""
+              />
+            </div>
+            <button
+              id="menuCloseBtn"
+              class="flex items-center gap-2 bg-white/40 backdrop-blur-sm text-white text-sm px-4 py-2 rounded-full"
+            >
+              <span class="leading-none">Tutup</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18 18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <nav class="flex flex-col gap-6 text-2xl font-medium">
+            <a href="#tujuan" class="mobile-nav-link text-white">Tujuan</a>
+            <a href="#target" class="text-white">Target</a>
+            <a href="#agenda" class="text-white">Agenda & Lokasi</a>
+            <a href="#lomba" class="text-white">Lomba & Kompetisi</a>
+          </nav>
+
+          <div class="mt-auto pt-6 border-t border-white">
+            <p class="text-xs text-white">
+              2026 <sup>©</sup> Gen Z Impact Fest
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-
-    <!-- SECTION HEADER -->
-    <header class="w-full">
-      <img src="/gen-z-impact-fest/assets/images/hero.svg" alt="" />
     </header>
 
-    <!-- SECTION TUJUAN -->
-    <section id="tujuan" class="mt-10 p-6 sm:px-20 md:px-8">
-      <div class="flex flex-col items-center justify-center te">
-        <h2 class="text-ungu font-bold text-xl">Tujuan</h2>
-        <span class="text-sm">Lorem ipsum dolor sit amet.</span>
-      </div>
-
-      <div
-        class="flex flex-col md:grid md:grid-cols-2 md:gap-x-3 md:items-stretch gap-y-4 mt-5"
-      >
-        <!-- TUJUAN 1 -->
-        <div class="flex items-stretch">
-          <div class="border-b flex items-center justify-center px-7">
-            <span>1</span>
-          </div>
-
-          <div class="border-r my-3"></div>
-
-          <div class="border-b px-7 py-2 flex flex-col gap-1 bg-ungu/30">
-            <h3 class="text-sm font-bold">Literasi Keuangan Mahasiswa</h3>
-            <p class="text-sm">
-              Meningkatkan literasi keuangan generasi muda, khususnya mahasiswa.
-            </p>
-          </div>
-        </div>
-
-        <!-- TUJUAN 2 -->
-        <div class="flex items-stretch">
-          <div class="border-b flex items-center justify-center px-7">
-            <span>1</span>
-          </div>
-
-          <div class="border-r my-3"></div>
-
-          <div class="border-b px-7 py-2 flex flex-col gap-1 bg-ungu/30">
-            <h3 class="text-sm font-bold">Literasi Keuangan Mahasiswa</h3>
-            <p class="text-sm">
-              Meningkatkan literasi keuangan generasi muda, khususnya mahasiswa.
-            </p>
-          </div>
-        </div>
-
-        <!-- TUJUAN 3 -->
-        <div class="flex items-stretch">
-          <div class="border-b flex items-center justify-center px-7">
-            <span>1</span>
-          </div>
-
-          <div class="border-r my-3"></div>
-
-          <div class="border-b px-7 py-2 flex flex-col gap-1 bg-ungu/30">
-            <h3 class="text-sm font-bold">Literasi Keuangan Mahasiswa</h3>
-            <p class="text-sm">
-              Meningkatkan literasi keuangan generasi muda, khususnya mahasiswa.
-            </p>
-          </div>
-        </div>
-
-        <!-- TUJUAN 4 -->
-        <div class="flex items-stretch">
-          <div class="border-b flex items-center justify-center px-7">
-            <span>1</span>
-          </div>
-
-          <div class="border-r my-3"></div>
-
-          <div class="border-b px-7 py-2 flex flex-col gap-1 bg-ungu/30">
-            <h3 class="text-sm font-bold">Literasi Keuangan Mahasiswa</h3>
-            <p class="text-sm">
-              Meningkatkan literasi keuangan generasi muda, khususnya mahasiswa.
-            </p>
-          </div>
-        </div>
-
-        <!-- TUJUAN 5 -->
-        <div class="flex items-stretch">
-          <div class="border-b flex items-center justify-center px-7">
-            <span>1</span>
-          </div>
-
-          <div class="border-r my-3"></div>
-
-          <div class="border-b px-7 py-2 flex flex-col gap-1">
-            <h3 class="text-sm font-bold">Literasi Keuangan Mahasiswa</h3>
-            <p class="text-sm">
-              Meningkatkan literasi keuangan generasi muda, khususnya mahasiswa.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION TARGET -->
-    <section class="mt-10 p-6 sm:px-20 md:px-8">
-      <div class="flex flex-col items-center justify-center te">
-        <h2 class="text-ungu font-bold text-xl">Target</h2>
-        <span class="text-sm">Lorem ipsum dolor sit amet.</span>
-      </div>
-
-      <div
-        class="flex flex-col md:grid md:grid-cols-3 md:gap-x-3 md:items-stretch items-center"
-      >
-        <!-- TARGET 1 -->
-        <div
-          class="shadow-md rounded-xl p-4 mt-5 bg-linear-to-tl from-ungu from-0% to-white to-20%"
-        >
-          <img
-            src="/gen-z-impact-fest/assets/images/target1.webp"
-            class="w-full"
-            alt=""
-          />
-          <div class="mt-5">
-            <h3 class="font-semibold text-base">The Scholars</h3>
-            <p>
-              Mahasiswa UGM dan seluruh universitas di Yogyakarta yang haus akan
-              ilmu dan relasi
-            </p>
-          </div>
-        </div>
-        <!-- TARGET 2 -->
-        <div
-          class="shadow-md rounded-xl p-4 mt-5 bg-linear-to-tl from-hijau from-0% to-white to-20%"
-        >
-          <img
-            src="/gen-z-impact-fest/assets/images/target1.webp"
-            class="w-full"
-            alt=""
-          />
-          <div class="mt-5">
-            <h3 class="font-semibold text-base">Young Professionals</h3>
-            <p>
-              Pekerja muda yang ingin mengoptimalkan penghasilan dan membangun
-              aset sejak dini
-            </p>
-          </div>
-        </div>
-        <!-- TARGET 3 -->
-        <div
-          class="shadow-md rounded-xl p-4 mt-5 bg-linear-to-tl from-pink from-0% to-white to-20%"
-        >
-          <img
-            src="/gen-z-impact-fest/assets/images/target1.webp"
-            class="w-full"
-            alt=""
-          />
-          <div class="mt-5">
-            <h3 class="font-semibold text-base">The Visionaries</h3>
-            <p>
-               Entrepreneur muda yang sedang membangun masa depan ekonomi
-              digital.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION AGENDA & LOKASI -->
-    <section
-      class="mt-10 p-6 sm:px-20 md:px-8 flex flex-col md:flex-row md:gap-4 items-start"
-    >
-      <div class="bg-gray-300 rounded-xl">
+    <main class="flex flex-col gap-y-10">
+      <!-- SECTION HERO -->
+      <section id="hero" class="w-full">
         <img
-          class="rounded-xl"
-          src="/gen-z-impact-fest/assets/images/bulaksumur.webp"
-          alt="w-full"
+          class="w-full"
+          src="/gen-z-impact-fest/assets/images/hero.svg"
+          alt=""
         />
-      </div>
+      </section>
 
-      <div class="flex flex-col mt-7 md:mt-0">
-        <div class="text-ungu flex flex-col gap-2">
-          <h2 class="font-bold text-xl">Agenda & Lokasi</h2>
-          <h3 class="text-2xl font-semibold">
-            Gadjah Mada University Club (UC) Hotel UGM
-          </h3>
-          <p class="text-sm">
-            Jl. Pancasila No.2, Sendowo, Sinduadi, Kec. Depok, Kabupaten Sleman,
-            Daerah Istimewa Yogyakarta 55281
-          </p>
-        </div>
-
-        <div class="flex items-stretch mt-5">
-          <div class="bg-ungu p-6 rounded-l-2xl">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="white"
-              class="size-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"
-              />
-            </svg>
-          </div>
-          <div
-            class="text-ungu w-full border border-ungu rounded-r-2xl p-2 flex flex-col items-start gap-1"
-          >
-            <span class="font-bold text-base">12 September 2026</span>
-            <span class="text-sm">Sabtu, 09.00 WIB - 14.00 WIB</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION LOMBA & KOMPETISI -->
-    <section class="mt-10 p-6 sm:px-20 md:px-8">
-      <div class="flex flex-col items-center justify-center te">
-        <h2 class="text-ungu font-bold text-xl">Lomba & Kompetisi</h2>
-        <span class="text-sm">Lorem ipsum dolor sit amet.</span>
-      </div>
-
-      <div
-        class="flex flex-col gap-7 items-center mt-7 md:grid md:grid-cols-3 md:gap-x-3 md:items-stretch"
+      <!-- SECTION TUJUAN -->
+      <section
+        id="tujuan"
+        class="mt-10 p-6 sm:px-20 md:px-8 lg:px-10 xl:px-16 2xl:px-28"
       >
-        <!-- LOMBA 1 -->
-        <div class="relative rounded-3xl shadow-md bg-ungu px-5 py-10">
-          <img
-            class="w-24"
-            src="/gen-z-impact-fest/assets/images/icon-lomba-1.svg"
-            alt=""
-          />
-
-          <img
-            class="absolute top-2 right-0 w-25"
-            src="/gen-z-impact-fest/assets/images/icon-abstrak-lomba-1.svg"
-            alt=""
-          />
-          <div class="mt-10 text-white flex flex-col gap-3">
-            <h3 class="text-xl font-semibold">
-              IMPACT CONTENT <br />
-              COMPETITION
-            </h3>
-            <p class="text-base font-normal max-w-[90%]">
-              Kami mengajak para kreator muda untuk menuangkan ide dan opini
-              mereka terkait isu masa depan (Keuangan, Karier, atau Lingkungan)
-              melalui video pendek.
-            </p>
-          </div>
+        <div class="flex flex-col items-center justify-center">
+          <h2 class="text-ungu font-bold text-xl lg:text-3xl 2xl:text-5xl">
+            Tujuan
+          </h2>
+          <span class="text-sm md:text-base text-ungu mt-3"
+            >Lorem ipsum dolor sit amet.</span
+          >
         </div>
 
-        <!-- LOMBA 2 -->
-        <div class="relative rounded-3xl shadow-md bg-hijau px-5 py-10">
-          <img
-            class="w-24"
-            src="/gen-z-impact-fest/assets/images/icon-lomba-2.svg"
-            alt=""
-          />
+        <div
+          class="flex flex-col md:grid md:grid-cols-2 md:gap-x-3 lg:gap-5 md:items-stretch gap-y-4 mt-5 sm:mt-7 md:mt-9 lg:mt-11 2xl:mt-14"
+        >
+          <!-- TUJUAN 1 -->
+          <div class="flex items-stretch">
+            <div class="border-b flex items-center justify-center px-7">
+              <span>1</span>
+            </div>
 
-          <img
-            class="absolute -top-1 -right-1 w-25"
-            src="/gen-z-impact-fest/assets/images/icon-abstrak-lomba-2.svg"
-            alt=""
-          />
-          <div class="mt-10 text-white flex flex-col gap-3">
-            <h3 class="text-xl font-semibold">
-              SKETCH & COLLECTION SHOWCASE (SKETSA KOLEKSI)
-            </h3>
-            <p class="text-base font-normal max-w-[90%]">
-              Wadah bagi para talenta di bidang desain dan seni visual untuk
-              memamerkan karya orisinal mereka.
-            </p>
+            <div class="border-r my-3"></div>
+
+            <div class="border-b px-7 py-2 flex flex-col gap-1 bg-ungu/30">
+              <h3 class="text-sm font-bold">Literasi Keuangan Mahasiswa</h3>
+              <p class="text-sm">
+                Meningkatkan literasi keuangan generasi muda, khususnya
+                mahasiswa.
+              </p>
+            </div>
+          </div>
+
+          <!-- TUJUAN 2 -->
+          <div class="flex items-stretch">
+            <div class="border-b flex items-center justify-center px-7">
+              <span>1</span>
+            </div>
+
+            <div class="border-r my-3"></div>
+
+            <div class="border-b px-7 py-2 flex flex-col gap-1 bg-ungu/30">
+              <h3 class="text-sm font-bold">Literasi Keuangan Mahasiswa</h3>
+              <p class="text-sm">
+                Meningkatkan literasi keuangan generasi muda, khususnya
+                mahasiswa.
+              </p>
+            </div>
+          </div>
+
+          <!-- TUJUAN 3 -->
+          <div class="flex items-stretch">
+            <div class="border-b flex items-center justify-center px-7">
+              <span>1</span>
+            </div>
+
+            <div class="border-r my-3"></div>
+
+            <div class="border-b px-7 py-2 flex flex-col gap-1 bg-ungu/30">
+              <h3 class="text-sm font-bold">Literasi Keuangan Mahasiswa</h3>
+              <p class="text-sm">
+                Meningkatkan literasi keuangan generasi muda, khususnya
+                mahasiswa.
+              </p>
+            </div>
+          </div>
+
+          <!-- TUJUAN 4 -->
+          <div class="flex items-stretch">
+            <div class="border-b flex items-center justify-center px-7">
+              <span>1</span>
+            </div>
+
+            <div class="border-r my-3"></div>
+
+            <div class="border-b px-7 py-2 flex flex-col gap-1 bg-ungu/30">
+              <h3 class="text-sm font-bold">Literasi Keuangan Mahasiswa</h3>
+              <p class="text-sm">
+                Meningkatkan literasi keuangan generasi muda, khususnya
+                mahasiswa.
+              </p>
+            </div>
+          </div>
+
+          <!-- TUJUAN 5 -->
+          <div class="flex items-stretch">
+            <div class="border-b flex items-center justify-center px-7">
+              <span>1</span>
+            </div>
+
+            <div class="border-r my-3"></div>
+
+            <div class="border-b px-7 py-2 flex flex-col gap-1">
+              <h3 class="text-sm font-bold">Literasi Keuangan Mahasiswa</h3>
+              <p class="text-sm">
+                Meningkatkan literasi keuangan generasi muda, khususnya
+                mahasiswa.
+              </p>
+            </div>
           </div>
         </div>
+      </section>
 
-        <!-- LOMBA 3 -->
-        <div class="relative rounded-3xl shadow-md bg-pink px-5 py-10">
-          <img
-            class="w-24"
-            src="/gen-z-impact-fest/assets/images/icon-lomba-3.svg"
-            alt=""
-          />
+      <!-- SECTION TARGET -->
+      <section
+        id="target"
+        class="mt-10 p-6 sm:px-20 md:px-8 lg:px-10 xl:px-16 2xl:px-28"
+      >
+        <div class="flex flex-col items-center justify-center">
+          <h2 class="text-ungu font-bold text-xl lg:text-3xl 2xl:text-5xl">
+            Target
+          </h2>
+          <span class="text-sm md:text-base text-ungu mt-3"
+            >Lorem ipsum dolor sit amet.</span
+          >
+        </div>
 
-          <img
-            class="absolute top-0 right-0 w-25"
-            src="/gen-z-impact-fest/assets/images/icon-abstrak-lomba-3.svg"
-            alt=""
-          />
-          <div class="mt-10 text-white flex flex-col gap-3">
-            <h3 class="text-xl font-semibold">
-              LIVE EVENT COVERAGE: “POST & WIN” (POSTING SELAMA ACARA)
-            </h3>
-            <p class="text-base font-normal max-w-[90%]">
-              kompetisi real-time untuk menjaga energi dan keramaian festival di
-              ranah digital selama dua hari kegiatan.
-            </p>
+        <div
+          class="flex flex-col md:grid md:grid-cols-3 md:gap-x-3 lg:gap-6 xl:gap-10 2xl:gap-12 md:items-stretch items-center"
+        >
+          <!-- TARGET 1 -->
+          <div
+            class="shadow-md rounded-xl p-4 mt-5 bg-linear-to-tl from-ungu from-0% to-white to-20%"
+          >
+            <img
+              src="/gen-z-impact-fest/assets/images/target1.webp"
+              class="w-full"
+              alt=""
+            />
+            <div class="mt-5">
+              <h3 class="font-semibold text-base">The Scholars</h3>
+              <p>
+                Mahasiswa UGM dan seluruh universitas di Yogyakarta yang haus
+                akan ilmu dan relasi
+              </p>
+            </div>
+          </div>
+          <!-- TARGET 2 -->
+          <div
+            class="shadow-md rounded-xl p-4 mt-5 bg-linear-to-tl from-hijau from-0% to-white to-20%"
+          >
+            <img
+              src="/gen-z-impact-fest/assets/images/target1.webp"
+              class="w-full"
+              alt=""
+            />
+            <div class="mt-5">
+              <h3 class="font-semibold text-base">Young Professionals</h3>
+              <p>
+                Pekerja muda yang ingin mengoptimalkan penghasilan dan membangun
+                aset sejak dini
+              </p>
+            </div>
+          </div>
+          <!-- TARGET 3 -->
+          <div
+            class="shadow-md rounded-xl p-4 mt-5 bg-linear-to-tl from-pink from-0% to-white to-20%"
+          >
+            <img
+              src="/gen-z-impact-fest/assets/images/target1.webp"
+              class="w-full"
+              alt=""
+            />
+            <div class="mt-5">
+              <h3 class="font-semibold text-base">The Visionaries</h3>
+              <p>
+                 Entrepreneur muda yang sedang membangun masa depan ekonomi
+                digital.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <!-- SECTION AGENDA & LOKASI -->
+      <section
+        id="agenda"
+        class="mt-10 p-6 sm:px-20 md:px-8 lg:px-10 xl:px-16 2xl:px-28 flex flex-col md:flex-row md:gap-4 lg:gap-10 items-start"
+      >
+        <div class="bg-gray-300 rounded-xl">
+          <img
+            class="-rotate-2 rounded-xl"
+            src="/gen-z-impact-fest/assets/images/bulaksumur.webp"
+            alt="w-full"
+          />
+        </div>
+
+        <div class="flex flex-col mt-7 md:mt-0">
+          <div class="text-ungu flex flex-col gap-2">
+            <h2 class="font-bold text-xl lg:text-3xl 2xl:text-5xl">
+              Agenda & Lokasi
+            </h2>
+            <h3 class="text-2xl 2xl:text-3xl font-semibold 2xl:mt-5">
+              Gadjah Mada University Club (UC) Hotel UGM
+            </h3>
+            <p class="text-sm md:text-base">
+              Jl. Pancasila No.2, Sendowo, Sinduadi, Kec. Depok, Kabupaten
+              Sleman, Daerah Istimewa Yogyakarta 55281
+            </p>
+          </div>
+
+          <div class="flex items-stretch mt-5">
+            <div class="bg-ungu p-6 rounded-l-2xl">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="white"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"
+                />
+              </svg>
+            </div>
+            <div
+              class="text-ungu w-full lg:w-fit lg:pr-8 border border-ungu rounded-r-2xl p-2 flex flex-col items-start gap-1"
+            >
+              <span class="font-bold text-base">12 September 2026</span>
+              <span class="text-sm">Sabtu, 09.00 WIB - 14.00 WIB</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION LOMBA & KOMPETISI -->
+      <section
+        id="lomba"
+        class="mt-10 p-6 sm:px-20 md:px-8 lg:px-10 xl:px-16 2xl:px-28"
+      >
+        <div class="flex flex-col items-center justify-center">
+          <h2 class="text-ungu font-bold text-xl lg:text-3xl 2xl:text-5xl">
+            Lomba & Kompetisi
+          </h2>
+          <span class="text-sm md:text-base text-ungu mt-3"
+            >Lorem ipsum dolor sit amet.</span
+          >
+        </div>
+
+        <div
+          class="flex flex-col gap-7 items-center mt-7 md:grid md:grid-cols-3 md:gap-3 lg:gap-6 xl:gap-10 md:items-stretch"
+        >
+          <!-- LOMBA 1 -->
+          <div class="relative rounded-3xl shadow-md bg-ungu px-5 py-10">
+            <img
+              class="w-24"
+              src="/gen-z-impact-fest/assets/images/icon-lomba-1.svg"
+              alt=""
+            />
+
+            <img
+              class="absolute top-2 right-0 w-25"
+              src="/gen-z-impact-fest/assets/images/icon-abstrak-lomba-1.svg"
+              alt=""
+            />
+            <div class="mt-10 text-white flex flex-col gap-3">
+              <h3 class="text-xl font-semibold">
+                IMPACT CONTENT <br />
+                COMPETITION
+              </h3>
+              <p class="text-base font-normal max-w-[90%]">
+                Kami mengajak para kreator muda untuk menuangkan ide dan opini
+                mereka terkait isu masa depan (Keuangan, Karier, atau
+                Lingkungan) melalui video pendek.
+              </p>
+            </div>
+          </div>
+
+          <!-- LOMBA 2 -->
+          <div class="relative rounded-3xl shadow-md bg-hijau px-5 py-10">
+            <img
+              class="w-24"
+              src="/gen-z-impact-fest/assets/images/icon-lomba-2.svg"
+              alt=""
+            />
+
+            <img
+              class="absolute -top-1 -right-1 w-25"
+              src="/gen-z-impact-fest/assets/images/icon-abstrak-lomba-2.svg"
+              alt=""
+            />
+            <div class="mt-10 text-white flex flex-col gap-3">
+              <h3 class="text-xl font-semibold">
+                SKETCH & COLLECTION SHOWCASE (SKETSA KOLEKSI)
+              </h3>
+              <p class="text-base font-normal max-w-[90%]">
+                Wadah bagi para talenta di bidang desain dan seni visual untuk
+                memamerkan karya orisinal mereka.
+              </p>
+            </div>
+          </div>
+
+          <!-- LOMBA 3 -->
+          <div class="relative rounded-3xl shadow-md bg-pink px-5 py-10">
+            <img
+              class="w-24"
+              src="/gen-z-impact-fest/assets/images/icon-lomba-3.svg"
+              alt=""
+            />
+
+            <img
+              class="absolute top-0 right-0 w-25"
+              src="/gen-z-impact-fest/assets/images/icon-abstrak-lomba-3.svg"
+              alt=""
+            />
+            <div class="mt-10 text-white flex flex-col gap-3">
+              <h3 class="text-xl font-semibold">
+                LIVE EVENT COVERAGE: “POST & WIN” (POSTING SELAMA ACARA)
+              </h3>
+              <p class="text-base font-normal max-w-[90%]">
+                kompetisi real-time untuk menjaga energi dan keramaian festival
+                di ranah digital selama dua hari kegiatan.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <footer
-      class="relative z-10 text-white bg-ungu border-t-[0.1px] border-ungu mt-30 sm:mt-40 p-6"
+      class="relative z-10 text-white bg-ungu border-t-[0.1px] border-ungu mt-30 sm:mt-40 lg:mt-60 xl:mt-[350px] 2xl:mt-[400px] p-6 sm:px-20 md:px-8 lg:px-10 xl:px-16 2xl:px-28"
     >
       <img
         class="absolute -z-50 top-0 left-0 w-full -translate-y-full"
@@ -398,13 +448,13 @@
       />
 
       <img
-        class="w-20 mb-5"
+        class="w-20 lg:w-40 mb-5"
         src="/gen-z-impact-fest/assets/images/logo-svg.svg"
         alt=""
       />
       <div class="flex flex-col md:flex-row md:justify-between">
-        <div class="md:max-w-[200px]">
-          <p class="mt-2">
+        <div class="md:max-w-[200px] lg:max-w-[90%]">
+          <p class="mt-2 text-sm md:text-base">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
             placeat?
           </p>
