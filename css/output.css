@@ -1112,6 +1112,10 @@
       font-size: var(--text-sm);
       line-height: var(--tw-leading, var(--text-sm--line-height));
     }
+    .lg\:font-bold {
+      --tw-font-weight: var(--font-weight-bold);
+      font-weight: var(--font-weight-bold);
+    }
     .lg\:shadow-\[0_0_40px_10px_rgba\(141\,99\,172\,0\.5\)\] {
       --tw-shadow: 0 0 40px 10px var(--tw-shadow-color, rgba(141,99,172,0.5));
       box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
