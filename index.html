@@ -1,9 +1,11 @@
 <!-- src/index.html -->
 <!doctype html>
-<html>
+<html lang="id">
   <head>
+    <title>Gen Z Impact Fest</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Gen Z Impact Fest" />
     <link href="./css/output.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -59,7 +61,11 @@
 
         <div class="">
           <div class="hidden">lorem</div>
-          <button id="menuOpenBtn" class="flex md:hidden flex-col gap-1.5 p-2">
+          <button
+            aria-label="Button Hamburger"
+            id="menuOpenBtn"
+            class="flex md:hidden flex-col gap-1.5 p-2"
+          >
             <span class="w-6 h-0.5 bg-white"></span>
             <span class="w-6 h-0.5 bg-white"></span>
             <span class="w-6 h-0.5 bg-white"></span>
@@ -75,6 +81,7 @@
 
       <div
         id="mobileMenu"
+        inert
         class="md:hidden fixed rounded-2xl top-4 left-4 sm:top-8 sm:left-8 w-4/5 h-[500px] z-50 bg-ungu [--menu-offset:16px] sm:[--menu-offset:32px] -translate-x-[calc(100%+var(--menu-offset))] transition-transform duration-300 ease-in-out"
       >
         <div class="flex flex-col h-full px-6 py-6">
@@ -112,10 +119,14 @@
 
           <nav class="flex flex-col gap-6 text-2xl font-medium">
             <a href="#tujuan" class="mobile-nav-link text-white">Tujuan</a>
-            <a href="#target" class="text-white">Target</a>
-            <a href="#lomba" class="text-white">Lomba & Kompetisi</a>
-            <a href="#event" class="text-white">Event</a>
-            <a href="#agenda" class="text-white">Agenda & Lokasi</a>
+            <a href="#target" class="mobile-nav-link text-white">Target</a>
+            <a href="#lomba" class="mobile-nav-link text-white"
+              >Lomba & Kompetisi</a
+            >
+            <a href="#event" class="mobile-nav-link text-white">Event</a>
+            <a href="#agenda" class="mobile-nav-link text-white"
+              >Agenda & Lokasi</a
+            >
           </nav>
 
           <div class="mt-auto pt-6 border-t border-white">
@@ -131,8 +142,15 @@
       <!-- SECTION HERO -->
       <section id="hero" class="relative w-full">
         <img
-          class="w-full h-auto"
+          fetchpriority="high"
+          class="w-full h-full hidden lg:block"
           src="/gen-z-impact-fest/assets/images/hero-baru2x.webp"
+          alt="Gen Z Impact Fest"
+        />
+        <img
+          fetchpriority="high"
+          class="w-full h-full block lg:hidden"
+          src="/gen-z-impact-fest/assets/images/hero-mobile.webp"
           alt="Gen Z Impact Fest"
         />
 
@@ -146,6 +164,7 @@
         </div>
         <button
           class="absolute top-[36%] sm:top-[38%] -translate-y-1/2 inset-x-0 text-xs md:text-sm lg:text-base xl:text-lg mx-auto w-fit px-3 py-2 sm:px-6 py-2.5 lg:px-12 lg:py-4 xl:px-14 xl:py-6 bg-pink text-white rounded-full hover:bg-gray-100 transition"
+          \
         >
           Registrasi
         </button>
@@ -1190,8 +1209,14 @@
         alt=""
       />
       <img
-        class="absolute -z-50 top-0 left-0 w-full -translate-y-full"
-        src="/gen-z-impact-fest/assets/images/footernew.png"
+        class="absolute -z-50 top-0 left-0 w-full -translate-y-full hidden lg:block"
+        src="/gen-z-impact-fest/assets/images/footernew.webp"
+        alt=""
+      />
+
+      <img
+        class="absolute -z-50 top-0 left-0 w-full -translate-y-full block lg:hidden"
+        src="/gen-z-impact-fest/assets/images/footer-mobile.webp"
         alt=""
       />
 
@@ -1272,6 +1297,7 @@
             </ul>
             <div class="flex items-center gap-3">
               <a
+                aria-label="Instagram"
                 href="#"
                 class="bg-white rounded-full w-10 h-10 flex items-center justify-center mt-3 cursor-pointer hover:bg-white/80 duration-300"
               >
@@ -1289,6 +1315,7 @@
                 </svg>
               </a>
               <a
+                aria-label="Linkedin"
                 href="#"
                 class="bg-white rounded-full w-10 h-10 flex items-center justify-center mt-3 cursor-pointer hover:bg-white/80 duration-300"
               >

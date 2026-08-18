@@ -5,6 +5,7 @@ const backdrop = document.getElementById("menuBackdrop");
 
 function openMenu() {
   menu.classList.remove("-translate-x-[calc(100%+var(--menu-offset))]");
+  menu.removeAttribute("inert");
   backdrop.classList.remove("opacity-0", "pointer-events-none");
   backdrop.classList.add("opacity-100");
   document.body.classList.add("overflow-hidden");
@@ -12,6 +13,7 @@ function openMenu() {
 
 function closeMenu() {
   menu.classList.add("-translate-x-[calc(100%+var(--menu-offset))]");
+  menu.setAttribute("inert", "");
   backdrop.classList.add("opacity-0", "pointer-events-none");
   backdrop.classList.remove("opacity-100");
   document.body.classList.remove("overflow-hidden");
