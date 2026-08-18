@@ -8,14 +8,11 @@
       "Courier New", monospace;
     --color-teal-400: oklch(77.7% 0.152 181.912);
     --color-purple-300: oklch(82.7% 0.119 306.383);
-    --color-slate-900: oklch(20.8% 0.042 265.755);
     --color-gray-100: oklch(96.7% 0.003 264.542);
     --color-gray-300: oklch(87.2% 0.01 258.338);
-    --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
     --container-xs: 20rem;
-    --container-sm: 24rem;
     --text-xs: 0.75rem;
     --text-xs--line-height: calc(1 / 0.75);
     --text-sm: 0.875rem;
@@ -28,21 +25,16 @@
     --text-xl--line-height: calc(1.75 / 1.25);
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
-    --text-3xl: 1.875rem;
-    --text-3xl--line-height: calc(2.25 / 1.875);
     --text-4xl: 2.25rem;
     --text-4xl--line-height: calc(2.5 / 2.25);
     --text-5xl: 3rem;
     --text-5xl--line-height: 1;
-    --text-6xl: 3.75rem;
-    --text-6xl--line-height: 1;
     --text-8xl: 6rem;
     --text-8xl--line-height: 1;
     --font-weight-normal: 400;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
-    --leading-tight: 1.25;
     --radius-sm: 0.25rem;
     --radius-xl: 0.75rem;
     --radius-2xl: 1rem;
@@ -57,7 +49,6 @@
     --default-mono-font-family: var(--font-mono);
     --color-hijau: #6ec490;
     --color-ungu: #8d63ac;
-    --color-kuning: #f3d92c;
     --color-pink: #fe7371;
   }
 }
@@ -421,9 +412,6 @@
   .h-\[500px\] {
     height: 500px;
   }
-  .h-auto {
-    height: auto;
-  }
   .h-full {
     height: 100%;
   }
@@ -716,13 +704,6 @@
     }
     background-image: linear-gradient(var(--tw-gradient-stops));
   }
-  .bg-linear-to-tr {
-    --tw-gradient-position: to top right;
-    @supports (background-image: linear-gradient(in lab, red, red)) {
-      --tw-gradient-position: to top right in oklab;
-    }
-    background-image: linear-gradient(var(--tw-gradient-stops));
-  }
   .from-hijau {
     --tw-gradient-from: var(--color-hijau);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
@@ -792,6 +773,9 @@
   }
   .pt-10 {
     padding-top: calc(var(--spacing) * 10);
+  }
+  .pt-16 {
+    padding-top: calc(var(--spacing) * 16);
   }
   .pt-20 {
     padding-top: calc(var(--spacing) * 20);
@@ -1226,6 +1210,9 @@
     }
     .lg\:py-16 {
       padding-block: calc(var(--spacing) * 16);
+    }
+    .lg\:pt-20 {
+      padding-top: calc(var(--spacing) * 20);
     }
     .lg\:pr-8 {
       padding-right: calc(var(--spacing) * 8);
