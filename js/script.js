@@ -23,21 +23,21 @@ openBtn.addEventListener("click", openMenu);
 closeBtn.addEventListener("click", closeMenu);
 backdrop.addEventListener("click", closeMenu);
 
-const mobileNavLinks = document.querySelectorAll(".mobile-nav-link");
+const allNavLinks = document.querySelectorAll(".mobile-nav-link, .nav-link");
 
-mobileNavLinks.forEach((link) => {
+allNavLinks.forEach((link) => {
   link.addEventListener("click", (e) => {
     e.preventDefault();
-
     const targetId = link.getAttribute("href");
     const targetSection = document.querySelector(targetId);
 
-    closeMenu();
-
-    if (targetSection) {
+    if (link.classList.contains("mobile-nav-link")) {
+      closeMenu();
       setTimeout(() => {
         targetSection.scrollIntoView({ behavior: "smooth" });
       }, 300);
+    } else {
+      targetSection.scrollIntoView({ behavior: "smooth" });
     }
   });
 });
